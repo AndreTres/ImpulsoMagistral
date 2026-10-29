@@ -1,0 +1,28 @@
+:root {
+  /* Official brand colors. Do not change these HEX values. */
+  --color-brand-primary: #102848;
+  --color-brand-deep: #081830;
+  --color-brand-intermediate: #183450;
+  --color-brand-gold: #C89048;
+  --color-brand-gold-light: #E8C078;
+  --color-brand-gold-dark: #A87000;
+
+  /* Interface neutrals. Not official brand colors. */
+  --color-surface: #f4f7f8;
+  --color-text: #1c1916;
+  --color-text-on-navy: #f7f5f2;
+  --color-line: #d5dee4;
+
+  /* Provisional typography, pending visual review. */
+  --font-display: "Fraunces Variable", "Times New Roman", serif;
+  --font-sans: "Source Sans 3 Variable", "Segoe UI", sans-serif;
+
+  --radius-control: 10px;
+  --radius-panel: 16px;
+  --header-height: 6.75rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+  --page-width: 72rem;
+}
