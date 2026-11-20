@@ -47,7 +47,7 @@ This file at the repository root is the only agent-instruction source. `docs/AGE
 - Comunidade Magistral: 4 months, weekly online meetings.
 - WhatsApp: `+5544999876764`, link `https://wa.me/5544999876764`. No approved prefilled message.
 - Public prices and payment terms in `docs/website-spec.md` are approved for the website.
-- Public title of the third service: **Formação de Representante Comercial**.
+- Public title of the third service: **Formação de Representante Magistral**.
 - Notícias stays in the UI. Articles come from CRF. None are supplied yet.
 - Materiais de apoio keeps its planned UI. Downloads stay off until real files exist. Hide that item from public navigation while it has no approved files.
 - Instagram: configurable profile link and icon. Official URL is not supplied. No dead link.
@@ -85,7 +85,7 @@ The website presents these three approved services:
 
 1. **Impulso ID** - customized product development for resale.
 2. **Comunidade Magistral** - group consulting focused on management and team development.
-3. **Formação de Representante Comercial** - individualized training and consulting for pharmaceutical representatives. Internal name: Formação de Representante Magistral. Do not rename the public title.
+3. **Formação de Representante Magistral** - individualized training and consulting for pharmaceutical representatives. Internal name: Formação de Representante Magistral. Do not rename the public title.
 
 Use the official documentation for their complete descriptions, deliverables, and commercial conditions.
 

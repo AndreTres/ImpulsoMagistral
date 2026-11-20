@@ -28,6 +28,33 @@ export function PlainList({ items }: { items: readonly string[] }) {
   );
 }
 
+function closeFaqItem(item: HTMLDetailsElement) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    item.open = false;
+    return;
+  }
+
+  item.classList.add("is-closing");
+
+  const finish = (event?: Event) => {
+    if (
+      event instanceof TransitionEvent &&
+      (event.target !== item || event.propertyName !== "grid-template-rows")
+    ) {
+      return;
+    }
+
+    item.removeEventListener("transitionend", finish);
+    item.open = false;
+    item.classList.remove("is-closing");
+  };
+
+  item.addEventListener("transitionend", finish);
+  window.setTimeout(() => {
+    if (item.classList.contains("is-closing")) finish();
+  }, 340);
+}
+
 export function FaqList({
   items,
 }: {
@@ -37,7 +64,14 @@ export function FaqList({
     <div className="faq">
       {items.map((item) => (
         <details key={item.question} className="faq__item">
-          <summary>
+          <summary
+            onClick={(event) => {
+              const parent = event.currentTarget.parentElement;
+              if (!(parent instanceof HTMLDetailsElement) || !parent.open) return;
+              event.preventDefault();
+              if (!parent.classList.contains("is-closing")) closeFaqItem(parent);
+            }}
+          >
             <span>{item.question}</span>
             <svg className="faq__arrow" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
               <path
@@ -56,21 +90,6 @@ export function FaqList({
         </details>
       ))}
     </div>
-  );
-}
-
-export function PriceCard({
-  amount,
-  detail,
-}: {
-  amount: string;
-  detail: string;
-}) {
-  return (
-    <aside className="price-card">
-      <p className="price-card__amount">{amount}</p>
-      <p>{detail}</p>
-    </aside>
   );
 }
 

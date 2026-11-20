@@ -7,5 +7,5 @@ export const navigation = [
   { href: "#inicio", label: "Início", public: true },
   { href: "#solucoes", label: "Soluções", public: true },
   { href: "#noticias", label: "Notícias", public: true },
-  { href: "#materiais", label: "Materiais de apoio", public: false },
+  { href: "#materiais", label: "Materiais de apoio", public: true },
 ] as const;

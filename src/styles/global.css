@@ -59,6 +59,19 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition:
+    opacity 650ms ease,
+    transform 650ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :focus-visible {
   outline: 3px solid var(--color-brand-primary);
   outline-offset: 3px;
@@ -97,7 +110,8 @@ button {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: var(--color-brand-primary);
+  background: #ffffff;
+  border-bottom: 3px solid var(--color-brand-gold);
 }
 
 .site-header__bar {
@@ -136,7 +150,7 @@ button {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--color-text-on-navy);
+  color: var(--color-brand-primary);
   cursor: pointer;
 }
 
@@ -196,7 +210,7 @@ button {
   gap: var(--space-s);
   padding: var(--space-s) max(1.25rem, env(safe-area-inset-right)) var(--space-l)
     max(1.25rem, env(safe-area-inset-left));
-  background: var(--color-brand-deep);
+  background: #ffffff;
   overscroll-behavior: contain;
 }
 
@@ -224,12 +238,59 @@ button {
   transition: color 180ms ease;
 }
 
+.site-header .site-nav__link {
+  position: relative;
+  color: var(--color-brand-primary);
+}
+
+.site-header .site-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.45rem;
+  width: 100%;
+  height: 2px;
+  background: var(--color-brand-gold);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 220ms ease;
+}
+
 .site-nav__link:hover {
   color: var(--color-brand-gold-light);
 }
 
+.site-header .site-nav__link:hover {
+  color: var(--color-brand-primary);
+}
+
+.site-header .site-nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+.site-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.instagram-header {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--color-brand-gold);
+}
+
+.instagram-header svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .site-header :focus-visible {
-  outline-color: var(--color-brand-gold-light);
+  outline-color: var(--color-brand-primary);
 }
 
 .contact-button {
@@ -257,8 +318,9 @@ button {
   outline-color: var(--color-brand-primary);
 }
 
-.site-nav .contact-button {
-  width: 100%;
+.site-nav__actions .contact-button {
+  flex: 1;
+  width: auto;
 }
 
 .hero {
@@ -358,6 +420,11 @@ button {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (min-width: 900px) {
@@ -382,8 +449,7 @@ button {
     gap: 2rem;
   }
 
-  .site-nav .contact-button {
+  .site-nav__actions .contact-button {
     width: auto;
-    margin-left: 0.5rem;
   }
 }

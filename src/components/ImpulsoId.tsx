@@ -2,8 +2,6 @@ import {
   ClosingBand,
   FaqList,
   PlainList,
-  PriceCard,
-  SectionTitle,
 } from "./ui.tsx";
 
 const steps = [
@@ -33,7 +31,18 @@ export function ImpulsoId() {
   return (
     <section className="band band--paper" id="impulso-id" aria-labelledby="impulso-titulo">
       <div className="band__content">
-      <SectionTitle id="impulso-titulo">Impulso ID</SectionTitle>
+      <h1 className="section-title" id="impulso-titulo">Impulso ID</h1>
+      <p>
+        Sua farmácia pode transformar os recursos que já possui em uma linha
+        de produtos com identidade própria e alinhada ao seu público.
+      </p>
+      <p>
+        Com o Impulso ID, desenvolvemos formulações personalizadas a partir dos
+        seus insumos e embalagens ou inspiradas nas tendências e nos produtos
+        em destaque no mercado. Cada proposta considera a realidade do seu
+        negócio, ampliando as opções de revenda e dando à sua equipe comercial
+        novos produtos para apresentar aos clientes.
+      </p>
       <p className="kicker">Sua farmácia tem recursos. Vamos explorar suas possibilidades.</p>
       <p>
         Escolher quais produtos desenvolver exige conhecer o público, avaliar
@@ -83,11 +92,6 @@ export function ImpulsoId() {
         Também oferecemos suporte e uma equipe de marketing que desenvolve
         toda parte dos rótulos personalizados.
       </p>
-      <PriceCard
-        amount="R$ 1.470,00"
-        detail="Pagamento em 3 parcelas de R$ 490,00. Atendimentos on-line, conforme a organização e o escopo da proposta."
-      />
-
       <h3>Perguntas frequentes</h3>
       <FaqList
         items={[
@@ -115,6 +119,7 @@ export function ImpulsoId() {
       />
 
       <ClosingBand
+        titleClassName="kicker"
         title="Vamos descobrir as possibilidades da sua próxima linha?"
         text="Conte sobre sua farmácia e o que você deseja desenvolver. Nossa equipe ajudará a avaliar como o Impulso ID pode contribuir para o seu negócio."
         label="Falar com a Impulso Magistral"

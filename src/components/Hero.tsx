@@ -4,11 +4,11 @@ import { WhatsAppLink } from "./WhatsAppLink.tsx";
 export function Hero() {
   return (
     <section className="hero" id="inicio" aria-labelledby="inicio-titulo">
-      <div className="hero__layout">
+      <div className="hero__layout reveal">
         <div>
           <h1 id="inicio-titulo">
-            Sua farmácia de manipulação tem potencial. Vamos impulsionar o
-            próximo passo.
+            Sua farmácia de manipulação tem potencial, vamos impulsionar o
+            próximo passo
           </h1>
           <p>
             Consultoria para fortalecer a gestão, desenvolver equipes e

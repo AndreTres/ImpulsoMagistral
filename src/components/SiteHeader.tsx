@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import logo from "../../assets/logo.png";
-import { navigation } from "../content/site.ts";
+import logo from "../../assets/logo.webp";
+import { instagramUrl, navigation } from "../content/site.ts";
+import { InstagramIcon } from "./InstagramIcon.tsx";
 import { WhatsAppLink } from "./WhatsAppLink.tsx";
 
 const publicNavigation = navigation.filter((item) => item.public);
@@ -32,7 +33,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__bar">
-        <a className="site-logo-link" href="#inicio" aria-label="Impulso Magistral">
+        <a className="site-logo-link" href="/#inicio" aria-label="Impulso Magistral">
           <img
             className="site-logo"
             src={logo}
@@ -65,15 +66,36 @@ export function SiteHeader() {
           <ul className="site-nav__list">
             {publicNavigation.map((item) => (
               <li key={item.href}>
-                <a className="site-nav__link" href={item.href} onClick={closeMenu}>
+                <a
+                  className="site-nav__link"
+                  href={`/${item.href}`}
+                  onClick={closeMenu}
+                >
                   {item.label}
                 </a>
               </li>
             ))}
           </ul>
-          <WhatsAppLink className="contact-button" >
-            Fale com nossos especialistas
-          </WhatsAppLink>
+          <div className="site-nav__actions">
+            {instagramUrl ? (
+              <a
+                className="instagram-header"
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram. Abre em uma nova aba."
+              >
+                <InstagramIcon />
+              </a>
+            ) : (
+              <span className="instagram-header" role="img" aria-label="Instagram">
+                <InstagramIcon />
+              </span>
+            )}
+            <WhatsAppLink className="contact-button">
+              WhatsApp
+            </WhatsAppLink>
+          </div>
         </nav>
       </div>
     </header>

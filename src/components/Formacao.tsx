@@ -2,8 +2,6 @@ import {
   ClosingBand,
   FaqList,
   PlainList,
-  PriceCard,
-  SectionTitle,
   TopicList,
 } from "./ui.tsx";
 
@@ -40,16 +38,38 @@ export function Formacao() {
   return (
     <section className="band" id="formacao" aria-labelledby="formacao-titulo">
       <div className="band__content">
-      <SectionTitle id="formacao-titulo">
-        Formação de Representante Comercial
-      </SectionTitle>
+      <h1 className="section-title" id="formacao-titulo">
+        Formação de Representante Magistral
+      </h1>
+      <p>
+        O relacionamento com prescritores começa com um profissional que
+        conhece sua farmácia, comunica seus diferenciais e conduz cada visita
+        com propósito.
+      </p>
+      <p>
+        Nesta consultoria individualizada, capacitamos seu colaborador para
+        atuar como representante magistral, desenvolvendo suas habilidades de
+        comunicação, organização e relacionamento com prescritores.
+      </p>
+      <p>
+        Auxiliamos na construção do painel de prescritores, acompanhamos a
+        montagem da agenda semanal e analisamos os resultados das visitas para
+        orientar os próximos passos. Também entregamos quatro materiais
+        personalizados por mês, alinhados à proposta da sua farmácia e aos
+        temas trabalhados na visitação.
+      </p>
+      <p>
+        Um acompanhamento para transformar visitas em oportunidades de
+        relacionamento e contribuir para a geração de receitas para sua
+        farmácia.
+      </p>
       <p className="kicker">Sua farmácia bem representada em cada visita.</p>
       <p>
         Uma atuação comercial consistente exige conhecer a farmácia, compreender
         o perfil dos prescritores e dar continuidade aos relacionamentos.
       </p>
       <p>
-        A Formação de Representante Comercial é uma consultoria individualizada
+        A Formação de Representante Magistral é uma consultoria individualizada
         que capacita seu colaborador para realizar visitas com organização,
         segurança e clareza. Acompanhamos a estruturação do trabalho, da
         construção do painel de prescritores à análise dos resultados, ajudando
@@ -71,11 +91,6 @@ export function Formacao() {
         As frentes de trabalho se conectam ao longo da consultoria, permitindo
         que o profissional aprenda, aplique e aperfeiçoe sua atuação.
       </p>
-      <PriceCard
-        amount="R$ 3.500,00 por mês"
-        detail="Contratação mínima de 6 meses. Investimento mínimo total de R$ 21.000,00."
-      />
-
       <Stage
         title="1. Preparação do representante"
         summary="Conhecimento e postura para representar sua farmácia"
@@ -84,7 +99,7 @@ export function Formacao() {
         ]}
         topics={[
           {
-            title: "Papel do representante comercial:",
+            title: "Papel do representante magistral:",
             text: "responsabilidades na visitação, no relacionamento e no desenvolvimento de oportunidades.",
           },
           {
@@ -251,7 +266,7 @@ export function Formacao() {
       <h3>O que sua farmácia recebe</h3>
       <PlainList
         items={[
-          "Capacitação individualizada do representante comercial.",
+          "Capacitação individualizada do representante magistral.",
           "Apoio à construção e à organização do painel de prescritores.",
           "Acompanhamento da montagem da agenda semanal.",
           "Orientação para abordagem, visitas e continuidade dos relacionamentos.",

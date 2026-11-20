@@ -1,5 +1,5 @@
 import { WhatsAppLink } from "./WhatsAppLink.tsx";
-import { PlainList, PriceCard, SectionTitle, TopicList } from "./ui.tsx";
+import { PlainList, TopicList } from "./ui.tsx";
 
 function Stage({
   title,
@@ -34,7 +34,32 @@ export function Comunidade() {
   return (
     <section className="band band--navy" id="comunidade" aria-labelledby="comunidade-titulo">
       <div className="band__content">
-      <SectionTitle id="comunidade-titulo">Comunidade Magistral</SectionTitle>
+      <h1 className="section-title" id="comunidade-titulo">
+        Comunidade Magistral
+      </h1>
+      <p>
+        O dia a dia da sua farmácia exige decisões, organização e uma equipe
+        capaz de transformar os objetivos da empresa em resultados.
+      </p>
+      <p>
+        A Comunidade Magistral é uma consultoria de gestão em grupo que apoia
+        proprietários, gestores e lideranças a conduzir o negócio com mais
+        direção e segurança. Trabalhamos o planejamento estratégico, a gestão
+        de pessoas e a melhoria dos processos, preparando os líderes de cada
+        setor para orientar suas equipes e desenvolver o potencial de cada
+        profissional.
+      </p>
+      <p>
+        Na gestão comercial, desenvolvemos scripts de atendimento, técnicas
+        de vendas e práticas voltadas à experiência do cliente, ajudando a
+        equipe a oferecer um atendimento mais consistente e a aproveitar
+        melhor as oportunidades de venda.
+      </p>
+      <p>
+        Tudo isso em um ambiente de aprendizado e troca entre farmácias, com
+        orientação para aplicar o conhecimento à realidade de cada empresa e
+        construir um crescimento saudável e lucrativo.
+      </p>
       <p className="kicker">
         Mais preparo para gerir sua farmácia. Mais autonomia para conduzir o
         crescimento.
@@ -56,11 +81,6 @@ export function Comunidade() {
         dos processos e o desenvolvimento dos vendedores. Um guia orienta a
         jornada e apoia a aplicação do conteúdo na rotina da empresa.
       </p>
-      <PriceCard
-        amount="R$ 3.920,00"
-        detail="Pagamento em 4 parcelas de R$ 980,00. Duração de 4 meses, com encontros semanais on-line."
-      />
-
       <div className="panel">
         <h3>Como funciona nosso método</h3>
         <p className="kicker">

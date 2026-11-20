@@ -4,7 +4,7 @@ import { SectionTitle } from "./ui.tsx";
 export function About() {
   return (
     <section className="band band--paper" aria-labelledby="quem-somos-titulo">
-      <div className="split">
+      <div className="split reveal">
         <figure className="frame">
           <img
             src={images.meeting.src}
