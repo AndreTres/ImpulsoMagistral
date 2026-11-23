@@ -1,7 +1,6 @@
 export const whatsappUrl = "https://wa.me/5544999876764";
 
-/** Official profile URL is still pending. Empty string keeps the link unpublished. */
-export const instagramUrl = "";
+export const instagramUrl = "https://www.instagram.com/impulsomagistral/";
 
 export const navigation = [
   { href: "#inicio", label: "Início", public: true },

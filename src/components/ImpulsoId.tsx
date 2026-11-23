@@ -6,23 +6,23 @@ import {
 
 const steps = [
   {
-    title: "1. Conhecemos sua farmácia.",
+    title: "1. Conhecemos sua farmácia",
     text: "Conversamos sobre o perfil da empresa, seu público e seus objetivos comerciais para orientar o desenvolvimento dos produtos.",
   },
   {
-    title: "2. Avaliamos os recursos e as oportunidades.",
+    title: "2. Avaliamos os recursos e as oportunidades",
     text: "Levantamos os insumos e as embalagens disponíveis e definimos com você o caminho da linha: aproveitar esses recursos, explorar referências do mercado ou combinar as duas possibilidades.",
   },
   {
-    title: "3. Desenvolvemos as formulações.",
+    title: "3. Desenvolvemos as formulações",
     text: "Elaboramos fórmulas personalizadas, considerando a proposta dos produtos e a realidade da sua farmácia.",
   },
   {
-    title: "4. Definimos as embalagens.",
+    title: "4. Definimos as embalagens",
     text: "Orientamos a escolha das embalagens adequadas às formulações e à apresentação da linha.",
   },
   {
-    title: "5. Organizamos o material de apoio.",
+    title: "5. Organizamos o material de apoio",
     text: "Reunimos as fórmulas, as descrições dos ativos e as informações sobre os produtos em um e-book para apoiar a capacitação da equipe comercial.",
   },
 ] as const;
@@ -78,10 +78,10 @@ export function ImpulsoId() {
       <h3>O que sua farmácia recebe</h3>
       <PlainList
         items={[
-          "Reunião para conhecer a farmácia e um diagnóstico de quais produtos seriam mais relevantes para sua empresa.",
-          "Desenvolvimento personalizado das fórmulas.",
-          "Orientação para definição das embalagens.",
-          "E-book com fórmulas, descrições dos ativos e informações de apoio ao time de vendas.",
+          "Reunião para conhecer a farmácia e um diagnóstico de quais produtos seriam mais relevantes para sua empresa",
+          "Desenvolvimento personalizado das fórmulas",
+          "Orientação para definição das embalagens",
+          "E-book com fórmulas, descrições dos ativos e informações de apoio ao time de vendas",
         ]}
       />
       <p>

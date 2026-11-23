@@ -217,11 +217,11 @@ export function Comunidade() {
             },
           ]}
           extra={[
-            "Compreender o fluxo das atividades.",
-            "Definir responsáveis e pontos de acompanhamento.",
-            "Identificar dificuldades e prioridades de melhoria.",
-            "Adaptar e implantar as rotinas propostas.",
-            "Acompanhar a aplicação e revisar o processo quando necessário.",
+            "Compreender o fluxo das atividades",
+            "Definir responsáveis e pontos de acompanhamento",
+            "Identificar dificuldades e prioridades de melhoria",
+            "Adaptar e implantar as rotinas propostas",
+            "Acompanhar a aplicação e revisar o processo quando necessário",
           ]}
           application="O gestor seleciona os processos prioritários e conduz sua implantação ou melhoria junto aos responsáveis de cada setor."
         />
@@ -281,12 +281,12 @@ export function Comunidade() {
         </p>
         <PlainList
           items={[
-            "Explicações dos temas trabalhados nos encontros.",
-            "Exercícios para analisar a realidade da farmácia.",
-            "Modelos de planos de ação e acompanhamento.",
-            "Propostas de processos e rotinas.",
-            "Roteiros de conversas, feedbacks e atendimento.",
-            "Espaços para registrar decisões, responsáveis e próximos passos.",
+            "Explicações dos temas trabalhados nos encontros",
+            "Exercícios para analisar a realidade da farmácia",
+            "Modelos de planos de ação e acompanhamento",
+            "Propostas de processos e rotinas",
+            "Roteiros de conversas, feedbacks e atendimento",
+            "Espaços para registrar decisões, responsáveis e próximos passos",
           ]}
         />
 

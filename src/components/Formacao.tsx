@@ -266,12 +266,12 @@ export function Formacao() {
       <h3>O que sua farmácia recebe</h3>
       <PlainList
         items={[
-          "Capacitação individualizada do representante magistral.",
-          "Apoio à construção e à organização do painel de prescritores.",
-          "Acompanhamento da montagem da agenda semanal.",
-          "Orientação para abordagem, visitas e continuidade dos relacionamentos.",
-          "Análise mensal dos resultados.",
-          "Quatro materiais personalizados por mês para apoiar a visitação.",
+          "Capacitação individualizada do representante magistral",
+          "Apoio à construção e à organização do painel de prescritores",
+          "Acompanhamento da montagem da agenda semanal",
+          "Orientação para abordagem, visitas e continuidade dos relacionamentos",
+          "Análise mensal dos resultados",
+          "Quatro materiais personalizados por mês para apoiar a visitação",
         ]}
       />
 
